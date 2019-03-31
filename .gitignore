@@ -1,0 +1,5 @@
+bin
+obj
+*.config
+Properties
+AssemblyInfo.cs
