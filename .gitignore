@@ -3,3 +3,8 @@ obj
 *.config
 Properties
 AssemblyInfo.cs
+*.suo
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
