@@ -6,5 +6,5 @@
 #### 03. Exercise-Simple Operations
 #### 04. Conditional Statements
 #### 05. Exercise-Conditional Statements
-
-#### Soon: 06. Nested Conditional Statements
+#### 06. Nested Conditional Statements
+#### Soon: 07. Exercise-Nested Conditional Statements
