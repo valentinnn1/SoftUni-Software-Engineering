@@ -7,4 +7,6 @@
 #### 04. Conditional Statements
 #### 05. Exercise-Conditional Statements
 #### 06. Nested Conditional Statements
-#### Soon: 07. Exercise-Nested Conditional Statements
+#### 07. Exercise-Nested Conditional Statements
+
+#### Soon: 08. While-Loop
