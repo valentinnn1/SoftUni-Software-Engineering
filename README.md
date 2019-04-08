@@ -9,5 +9,6 @@
 #### 06. Nested Conditional Statements
 #### 07. Exercise-Nested Conditional Statements
 #### 08. While-Loop
+#### 09. Exercise-While Loop
 
-#### Soon: 09. Exercise-While Loop
+#### Soon: 10. For-Loop
