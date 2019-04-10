@@ -11,5 +11,6 @@
 #### 08. While-Loop
 #### 09. Exercise-While Loop
 #### 10. For-Loop
+#### 11. Exercise-For Loop
 
-#### Soon: 11. Exercise-For Loop
+#### Soon: 12. Nested Loops
