@@ -13,5 +13,7 @@
 #### 10. For-Loop
 #### 11. Exercise-For Loop
 #### 12. Nested Loops
+#### 13. Exercise-Nested Loops
 
-#### Soon: 13. Exercise-Nested Loops
+#### Soon: 14. Sample Exam-25 November 2018
+#### Soon: 15. Exam-1 December 2018
