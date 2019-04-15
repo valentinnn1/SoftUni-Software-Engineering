@@ -1,6 +1,6 @@
 # SoftUni-Software-Engineering
 
-### Programming Basics:
+### Programming Basics with C#:
 01. First Steps In Coding
 02. Simple Operations and Calculations
 03. Exercise-Simple Operations
@@ -15,6 +15,11 @@
 12. Nested Loops
 13. Exercise-Nested Loops
 14. Sample Exam-25 November 2018
-Soon: 15. Exam-1 December 2018
+15. Exam-1 December 2018
 
-### Soon: Technology Fundamentals
+Solutions from past Programming Basics exams:
+ - Exam-28 and 29 July 2018
+ - Exam-11 and 12 August 2018
+
+
+### Soon: Technology Fundamentals with C#
