@@ -1,6 +1,5 @@
-# SoftUni-Software-Engineering
+# Programming Basics with C#:
 
-### Programming Basics with C#:
 01. First Steps In Coding
 02. Simple Operations and Calculations
 03. Exercise-Simple Operations
