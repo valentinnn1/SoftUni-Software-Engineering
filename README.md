@@ -2,4 +2,4 @@
 
 ### Programming Basics with C#
 
-### Soon: Technology Fundamentals with C#
+### Technology Fundamentals with C#
