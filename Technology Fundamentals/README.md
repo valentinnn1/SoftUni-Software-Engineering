@@ -6,7 +6,7 @@
 04. Basic CSS
 05. Arrays
 06. Methods
-Soon: 07. Lists
+07. Lists
 
 Solutions from past Technology Fundamentals exams:
  - Soon...
