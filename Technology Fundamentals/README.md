@@ -7,6 +7,7 @@
 05. Arrays
 06. Methods
 07. Lists
+08. Objects and Classes
 
 Solutions from past Technology Fundamentals exams:
  - Soon...
