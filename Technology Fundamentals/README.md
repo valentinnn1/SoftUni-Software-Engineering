@@ -8,6 +8,7 @@
 06. Methods
 07. Lists
 08. Objects and Classes
+09. Demo Mid Exam-02 Mar 2019
 
 Solutions from past Technology Fundamentals exams:
  - Soon...
