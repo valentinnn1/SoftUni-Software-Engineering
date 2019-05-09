@@ -12,6 +12,7 @@
 10. Mid Exam-10 Mar 2019
 11. Associative Arrays
 12. RegEx
+13. Basic Web
 
 Solutions from past Technology Fundamentals exams:
  - Soon...
