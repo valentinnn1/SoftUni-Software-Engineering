@@ -13,6 +13,7 @@
 11. Associative Arrays
 12. RegEx
 13. Basic Web
+14. Basic CRUD
 
 Solutions from past Technology Fundamentals exams:
  - Soon...
