@@ -18,4 +18,5 @@
 16. Final Exam-14 Apr 2019
 
 Solutions from past Technology Fundamentals exams:
- - Soon...
+ - Soon: SoftUni Twitter Demo
+ 
