@@ -21,4 +21,4 @@ Solutions from past Technology Fundamentals exams:
  - Mid Exam - 10 March 2019 Group 2
  - Mid Exam - 4 Nov 2018
  - Retake Mid Exam - 18 Dec 2018
- - Soon: Final Exam - 16 Dec 2018
+ - Retake Final Exam - 20 Dec 2018 
