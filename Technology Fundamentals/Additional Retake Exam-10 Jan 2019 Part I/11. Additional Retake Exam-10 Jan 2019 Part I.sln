@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Santa's Gifts", "02. Santa's Gifts\02. Santa's Gifts.csproj", "{F684A2E9-C5AC-40B7-9A58-E8E4072C7B75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Santa's New List", "04. Santa's New List\04. Santa's New List.csproj", "{BBB0D8A0-CC57-4485-A2E9-6354F79C0839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F684A2E9-C5AC-40B7-9A58-E8E4072C7B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F684A2E9-C5AC-40B7-9A58-E8E4072C7B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F684A2E9-C5AC-40B7-9A58-E8E4072C7B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F684A2E9-C5AC-40B7-9A58-E8E4072C7B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB0D8A0-CC57-4485-A2E9-6354F79C0839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB0D8A0-CC57-4485-A2E9-6354F79C0839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB0D8A0-CC57-4485-A2E9-6354F79C0839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB0D8A0-CC57-4485-A2E9-6354F79C0839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D3EACB3-1395-4766-B86E-EC6E5427CCF4}
+	EndGlobalSection
+EndGlobal
