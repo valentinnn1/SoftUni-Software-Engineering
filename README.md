@@ -1,5 +1,4 @@
 # SoftUni-Software-Engineering
 
-### Programming Basics with C#
-### Technology Fundamentals with C#
-### Soon: Front-End
+### 01. Programming Basics with C#
+### 02. C# Fundamentals
