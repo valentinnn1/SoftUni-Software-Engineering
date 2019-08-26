@@ -1,4 +1,4 @@
-# Technology Fundamentals with C#:
+# C# Fundamentals:
 
 01. Intro and Basic Syntax
 02. Basic HTML
@@ -17,7 +17,7 @@
 15. Demo Final Exam-06 Apr 2019
 16. Final Exam-14 Apr 2019
 
-Solutions from past Technology Fundamentals exams:
+Solutions from past C# Fundamentals exams:
  - Mid Exam - 10 March 2019 Group 2
  - Mid Exam - 4 Nov 2018
  - Retake Mid Exam - 18 Dec 2018
