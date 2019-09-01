@@ -8,5 +8,5 @@
 06. For-Loop
 07. Nested Loops
 
-Solutions from past Programming Basics exams:
+#### JavaScript solutions from past Programming Basics exams:
  - SOON
