@@ -7,6 +7,3 @@
 05. While-Loop
 06. For-Loop
 07. Nested Loops
-
-#### JavaScript solutions from past Programming Basics exams:
- - SOON
