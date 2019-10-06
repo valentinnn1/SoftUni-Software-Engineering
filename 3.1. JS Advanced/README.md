@@ -3,6 +3,8 @@
 01. Syntax, Functions and Statements
 02. Objects
 03. Arrays
+04. Advanced Functions
+05. DOM
 
 Solutions from past JS Advanced exams:
  - Soon
