@@ -4,7 +4,7 @@
 02. Objects
 03. Arrays
 04. Advanced Functions
-05. DOM
+05. Document Object Model (DOM)
 
 Solutions from past JS Advanced exams:
  - Soon
