@@ -6,6 +6,7 @@
 04. Advanced Functions
 05. Document Object Model (DOM)
 06. DOM Manipulations
+07. Classes
 
 Solutions from past JS Advanced exams:
  - Soon
