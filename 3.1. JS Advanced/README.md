@@ -7,6 +7,7 @@
 05. Document Object Model (DOM)
 06. DOM Manipulations
 07. Classes
+08. Unit testing and modules
 
 Solutions from past JS Advanced exams:
  - Soon
