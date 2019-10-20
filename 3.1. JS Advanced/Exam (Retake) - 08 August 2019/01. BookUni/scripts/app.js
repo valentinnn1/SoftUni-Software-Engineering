@@ -1,78 +1,92 @@
 function solve() {
-    const inputArr = document.getElementsByTagName('input');
-    const btn = document.getElementsByTagName('button')[0];
-    const profit = document.querySelector('body > h1:nth-child(3)');
-    let sum = 0;
+  document.querySelector("button").addEventListener("click", addBook);
 
-    btn.addEventListener('click', add);
+  const oldBooks = document.querySelector(
+    "#outputs > section:nth-child(1) > div"
+  );
+  const newBooks = document.querySelector(
+    "#outputs > section:nth-child(2) > div"
+  );
+  const totalProfit = document.querySelector("body > h1:nth-child(3)");
 
-    function add(ev) {
-        ev.preventDefault();
+  function addBook(event) {
+    event.preventDefault();
+    const [title, year, price] = Array.from(
+      document.getElementsByTagName("input")
+    );
 
-        const book = inputArr[0].value;
-        const year = +inputArr[1].value;
-        let price = +inputArr[2].value;
-
-        if (book !== '' && typeof book === 'string' && year >= 0 && price >= 0) {
-            price = price.toFixed(2);
-
-            if (year >= 2000) {
-                createBook(book, year, price, 'new');
-            } else {
-                createBook(book, year, price, 'old');
-            }
-        }
+    if (typeof title.value !== "string" || title.value === "") {
+      return;
     }
 
-    function createBook(book, year, price, type) {
-
-        let div = document.createElement('div');
-        div.setAttribute('class', 'book');
-
-        let p = document.createElement('p');
-        p.textContent = `${book} [${year}]`;
-        div.appendChild(p);
-
-        let button = document.createElement('button');
-        button.textContent = `Buy it only for ${price} BGN`;
-        button.addEventListener('click', remove);
-        div.appendChild(button);
-
-        if (type === 'new') {
-            let moveBtn = document.createElement('button');
-            moveBtn.textContent = 'Move to old section';
-            moveBtn.addEventListener('click', move);
-            div.appendChild(moveBtn);
-
-            document.querySelector('#outputs > section:nth-child(2) > div').appendChild(div);
-        } else {
-            price = makeDiscount(price, 15);
-            button.textContent = `Buy it only for ${price} BGN`;
-            document.querySelector('#outputs > section:nth-child(1) > div').appendChild(div);
-        }
+    if (!isNaN(year.value) && Number(year.value) < 0) {
+      return;
     }
 
-    function remove(ev) {
-        let text = ev.target.parentNode.children[1].textContent;
-        let price = Number(text.replace('Buy it only for ', '').replace(' BGN', ''));
-        sum += price
-        profit.textContent = `Total Store Profit: ${sum.toFixed(2)} BGN`;
-        ev.target.parentNode.remove();
+    if (!isNaN(price.value) && Number(price.value) < 0) {
+      return;
     }
 
-    function move(ev) {
+    const div = document.createElement("div");
+    div.setAttribute("class", "book");
 
-        let text = ev.target.parentNode.children[1].textContent;
-        let price = Number(text.replace('Buy it only for ', '').replace(' BGN', ''));
-        price = makeDiscount(price, 15);
-        ev.target.parentNode.children[1].textContent = `Buy it only for ${price.toFixed(2)} BGN`;
+    const p = document.createElement("p");
+    p.textContent = `${title.value} [${year.value}]`;
+    div.appendChild(p);
 
-        document.querySelector('#outputs > section:nth-child(1) > div').appendChild(ev.target.parentNode);
+    const buttonBuy = document.createElement("button");
+    buttonBuy.addEventListener("click", buyBook);
+    div.appendChild(buttonBuy);
 
-        ev.target.parentNode.children[2].remove();
+    if (year.value < 2000) {
+      buttonBuy.textContent = `Buy it only for ${(
+        Number(price.value) * 0.85
+      ).toFixed(2)} BGN`;
+      oldBooks.appendChild(div);
+    } else if (year.value >= 2000) {
+      buttonBuy.textContent = `Buy it only for ${Number(price.value).toFixed(
+        2
+      )} BGN`;
+      newBooks.appendChild(div);
+
+      const buttonMove = document.createElement("button");
+      buttonMove.textContent = "Move to old section";
+      buttonMove.addEventListener("click", moveBook);
+      div.appendChild(buttonMove);
     }
 
-    function makeDiscount(price, num) {
-        return price * (1 - num / 100);
-    }
+    [title.value, year.value, price.value] = ["", "", ""];
+  }
+
+  function buyBook() {
+    const parent = this.parentNode.parentNode;
+    const child = this.parentNode;
+
+    const buyInfo = this.textContent.split(" ");
+    const price = Number(buyInfo[4]);
+
+    const profitInfo = totalProfit.textContent.split(" ");
+    const profit = Number(profitInfo[3]);
+
+    profitInfo[3] = (profit + price).toFixed(2);
+    totalProfit.textContent = profitInfo.join(" ");
+
+    parent.removeChild(child);
+  }
+
+  function moveBook() {
+    const parent = this.parentNode.parentNode;
+    const child = this.parentNode;
+
+    const buyInfo = this.previousElementSibling.textContent.split(" ");
+    const price = Number(buyInfo[4]);
+
+    buyInfo[4] = (price * 0.85).toFixed(2);
+    this.previousElementSibling.textContent = buyInfo.join(" ");
+
+    child.removeChild(this);
+    parent.removeChild(child);
+
+    oldBooks.appendChild(child);
+  }
 }
