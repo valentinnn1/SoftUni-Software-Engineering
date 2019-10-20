@@ -1,83 +1,79 @@
-// 85/100
-
 class Library {
   constructor(libraryName) {
     this.libraryName = libraryName;
     this.subscribers = [];
-
-    this.normalCount = this.libraryName.length;
-    this.specialCount = this.libraryName.length * 2;
-    this.vipCount = Number.MAX_SAFE_INTEGER;
     this.subscriptionTypes = {
-      normal: this.normalCount,
-      special: this.specialCount,
-      vip: this.vipCount
+      normal: libraryName.length,
+      special: libraryName.length * 2,
+      vip: Number.MAX_SAFE_INTEGER
     };
   }
 
   subscribe(name, type) {
-    if (!this.subscriptionTypes[type]) {
+    if (!this.subscriptionTypes.hasOwnProperty(type)) {
       throw new Error(`The type ${type} is invalid`);
     }
-    if (!this.subscribers.find(x => x.name === name)) {
-      this.subscribers.push({ name, type, books: [] });
-      return this.subscribers[this.subscribers.length - 1];
+
+    let person = this.subscribers.find(s => s.name === name);
+
+    if (!person) {
+      person = { name, type, books: [] };
+      this.subscribers.push(person);
     } else {
-      let found = this.subscribers.find(x => x.name === name);
-      found.type = type;
-      return found;
+      person.type = type;
     }
+
+    return person;
   }
 
   unsubscribe(name) {
-    if (!this.subscribers.find(x => x.name === name)) {
+    const person = this.subscribers.find(s => s.name === name);
+
+    if (!person) {
       throw new Error(`There is no such subscriber as ${name}`);
     }
-    const foundIndex = this.subscribers.findIndex(x => x.name === name);
-    this.subscribers.splice(foundIndex, 1);
+
+    const personIndex = this.subscribers.findIndex(s => s.name === name);
+    this.subscribers.splice(personIndex, 1);
     return this.subscribers;
   }
-  //tuk mai ima test, mezhdu dvata metoda; proverka
+
   receiveBook(subscriberName, bookTitle, bookAuthor) {
-    if (!this.subscribers.find(x => x.name === subscriberName)) {
-      throw new Error(`There is no such subscriber as ${name}`);
-    }
-    let subscriber = this.subscribers.find(x => x.name === subscriberName);
+    const person = this.subscribers.find(s => s.name === subscriberName);
 
-    const limit = this.subscriptionTypes[subscriber.type];
-    if (subscriber.books.length >= limit) {
-      throw new Error(`You have reached your subscription limit ${limit}!`);
+    if (!person) {
+      throw new Error(`There is no such subscriber as ${subscriberName}`);
     }
-    subscriber.books.push({ title: bookTitle, author: bookAuthor });
 
-    return subscriber;
+    const typeLimit = this.subscriptionTypes[person.type];
+
+    if (typeLimit === person.books.length) {
+      throw new Error(`You have reached your subscription limit ${typeLimit}!`);
+    }
+
+    const book = { title: bookTitle, author: bookAuthor };
+    person.books.push(book);
+    return person;
   }
 
   showInfo() {
     if (this.subscribers.length === 0) {
       return `${this.libraryName} has no information about any subscribers`;
     }
-    let outputStr = "";
-    this.subscribers.forEach(el => {
-      outputStr += `Subscriber: ${el.name}, Type: ${el.type}\n`;
-      outputStr += `Received books: `;
 
-      el.books.forEach(e => {
-        outputStr += `${e.title} by ${e.author}, `;
+    const output = [];
+
+    this.subscribers.forEach(s => {
+      output.push(`Subscriber: ${s.name}, Type: ${s.type}`);
+      const books = [];
+
+      Object.entries(s.books).forEach(([_, book]) => {
+        books.push(`${book.title} by ${book.author}`);
       });
+
+      output.push(`Received books: ${books.join(", ")}`);
     });
-    return (outputStr = outputStr.slice(0, outputStr.length - 2));
+
+    return output.join("\n") + "\n";
   }
 }
-let lib = new Library("Lib");
-
-console.log(lib.subscribe("Peter", "normal"));
-console.log(lib.subscribe("John", "special"));
-
-console.log(
-  lib.receiveBook("John", "A Song of Ice and Fire", "George R. R. Martin")
-);
-console.log(lib.receiveBook("Peter", "Lord of the rings", "J. R. R. Tolkien"));
-console.log(lib.receiveBook("John", "Harry Potter", "J. K. Rowling"));
-
-console.log(lib.showInfo());
