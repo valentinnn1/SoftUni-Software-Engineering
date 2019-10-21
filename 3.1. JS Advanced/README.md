@@ -11,5 +11,8 @@
 09. Strings and regular expressions
 
 Solutions from past JS Advanced exams:
- - Exam - 07 July 2019
+ - Exam (Demo) - July 2019
  - Exam (Retake) - 08 August 2019
+ - Exam (Retake) - 18 April 2019
+ - Exam - 07 July 2019
+ - Exam - 17 March 2019
