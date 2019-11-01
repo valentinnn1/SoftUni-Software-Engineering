@@ -9,6 +9,7 @@
 07. Classes
 08. Unit testing and modules
 09. Strings and regular expressions
+10. Workshop
 
 Solutions from past JS Advanced exams:
  - Exam (Demo) - July 2019
@@ -16,3 +17,4 @@ Solutions from past JS Advanced exams:
  - Exam (Retake) - 18 April 2019
  - Exam - 07 July 2019
  - Exam - 17 March 2019
+ - Exam - 26 October 2019
