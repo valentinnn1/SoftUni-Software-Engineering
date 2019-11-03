@@ -5,5 +5,6 @@
 ### 2.1. C# Fundamentals
 ### 3.1. JS Advanced
 ### 3.2. JS Applications
-### Soon: 4.1. JS Back-End
-### Soon: 4.2. ReactJS
+### 4.1. HTML & CSS
+### 4.2. CSS Advanced
+### Soon: Angular, VueJS, JS Back-End, ReactJS
