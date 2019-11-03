@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+article{
+    width: 800px;
+    margin: 2rem auto;
+}
+
+header{
+    text-align: center;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--font-family-headings);
+}
+
+h2,h3,h4{
+    padding: 1rem 0;
+}
+
+h1{
+    padding-bottom: 1rem;
+}
+
+p{
+    font-family: var(--font-family-all);
+}

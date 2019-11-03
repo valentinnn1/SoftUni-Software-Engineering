@@ -1,0 +1,36 @@
+html {
+    font: 16px/1.5 Georgia, serif;
+}
+
+article{
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+ul{
+    margin-left: 3rem;
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    padding-bottom: 0.5em;
+    padding-top: 1.5rem;
+}
+
+h1 { font-size: 2.5em; }
+
+h2 { font-size: 2.1em; }
+
+h3 { font-size: 1.8em; }
+
+p, li:last-of-type{
+    padding-bottom: 1.5em;
+}
+
+header p{
+    padding-bottom: 0;
+}

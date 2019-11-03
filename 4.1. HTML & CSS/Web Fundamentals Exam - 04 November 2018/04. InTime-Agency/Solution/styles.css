@@ -1,0 +1,285 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+
+
+body > header:first-of-type {
+	display: flex;
+	justify-content: space-between;
+}
+
+header{
+    padding: 1rem 6rem;
+}
+
+header .site-title {
+	min-width: 20vw;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	display: block;
+	padding: 0 0.25rem;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 0.5em 1rem;
+	text-decoration: none;
+	color: black;
+	border-radius: 0.2rem;
+}
+
+span{
+    color: rgb(0, 140, 186);
+}
+
+header nav ul li:first-of-type{
+    border-bottom: 2px solid rgb(0, 140, 186);
+}
+
+.section-first{
+    background: url(images/slide2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    position: relative;
+}
+
+.darker{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    width: 420px;
+    height: 170px;
+    position: absolute;
+    margin: 12rem;
+    padding: 1rem;
+}
+
+.darker h1{
+    font-size: 35px;
+}
+
+.section-first input[type="submit"]{
+    color: white;
+    background-color: rgb(0, 140, 186);
+    border-radius: 1.5rem;
+    padding: 0.8rem 2.7rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    font-size: 16px;
+}
+
+.section-second{
+    color: rgb(69, 69, 69);
+    text-align: center;
+}
+
+.section-second h1{
+    padding-top: 2rem;
+}
+
+.section-second hr{
+    width: 90px;
+    margin: 10px auto;
+    background: rgb(0, 140, 186);
+    height: 3px;
+    border: none;
+}
+
+.section-second p{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.section-second input[type="submit"]{
+    color: white;
+    background-color: rgb(69, 69, 69);
+    border-radius: 1.5rem;
+    padding: 0.8rem 2.7rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.section-third{
+    text-align: center;
+    color: rgb(69, 69, 69);
+    background-color: rgb(238, 240, 241);
+}
+
+.section-third h1{
+    padding-top: 2rem;
+}
+
+.section-third hr{
+    width: 90px;
+    margin: 10px auto;
+    background: rgb(69, 69, 69);
+    height: 3px;
+    border: none;
+    margin-bottom: 1.4rem;
+}
+
+.section-third ul{
+    display: flex;
+    justify-content: center;
+}
+
+.section-third ul li{
+    list-style-type: none;
+    width: 300px;
+}
+
+.section-third ul li:nth-child(2){
+    margin: 0 2rem;
+}
+
+.section-third ul li img{
+    width: 300px;
+}
+
+.section-third h2{
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.section-third p{
+    font-size: 14px;
+    padding-top: 0.3rem;
+}
+
+.section-third input{
+    margin-top: 0.5rem;
+    color: white;
+    background-color: rgb(69, 69, 69);
+    border-radius: 0.5rem;
+    padding: 0.8rem 2.7rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.section-fourth{
+    background-color: rgb(57, 63, 67);
+    text-align: center;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.section-fourth input[type="email"]{
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.8rem 14rem 0.8rem 0.7rem;
+    outline: none;
+    font-style: italic;
+    background-color: rgb(84, 90, 94);
+}
+
+.section-fourth hr{
+    width: 90px;
+    margin: 10px auto;
+    background: white;
+    height: 3px;
+    border: none;
+    margin-bottom: 0.8rem;
+}
+
+.section-fourth h1{
+    padding-top: 1rem;
+}
+
+.subscribe{
+    padding-top: 1rem;
+}
+
+.section-fourth input[type="submit"]{
+    background-color: rgb(104, 186, 248);
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.8rem 2.7rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.fifth{
+    background-color: rgb(47, 53, 57);
+    color: white;
+}
+
+.fifth-to-parts,
+.first-to-parts{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons li{
+    padding-right: 1rem;
+}
+
+.li-icons{
+    padding-left: 4rem;
+}
+
+.icons li a{
+    font-family: 'Font Awesome 5 Brands';
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+}
+
+.fifth-to-parts{
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.first-to-parts li{
+    padding-top: 0.5rem;
+}
+
+.first-to-parts > li{
+    margin-right: 11rem;
+}
+
+footer{
+    background-color: rgb(38, 43, 47);
+    color: white;
+    padding: 0.5rem 5rem;
+    text-align: center;
+}

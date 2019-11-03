@@ -1,0 +1,39 @@
+@media (min-width: 480px){
+    main .left-to-right article{
+        border-radius: 30%;
+        width: 280px;
+    }
+
+    header h1{
+        margin: 40px auto;
+    }
+
+    article img{
+        width: 100%;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    button{
+        display: none;
+    }
+
+    .left-to-right article{
+        margin-top: 5rem;
+    }
+
+    article form{
+        text-align: center;
+    }
+}

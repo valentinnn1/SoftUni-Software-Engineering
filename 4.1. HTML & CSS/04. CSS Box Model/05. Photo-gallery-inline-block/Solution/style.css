@@ -1,0 +1,42 @@
+html{
+    background: rgb(238,238,238);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 360px;
+    border: 0.4px solid black;
+    padding: 0.6rem;
+    background: white;
+    margin-bottom: 1.5rem;
+    vertical-align: middle;
+}
+
+ul li:nth-child(1),
+ul li:nth-child(2),
+ul li:nth-child(3)
+{
+    margin-top: 3rem;
+}
+
+ul li:not(:nth-child(3n+3)){
+    margin-right: 1rem; 
+}
+
+ul li img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

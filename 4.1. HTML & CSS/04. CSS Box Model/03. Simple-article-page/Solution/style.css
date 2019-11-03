@@ -1,0 +1,13 @@
+html{
+    color: rgb(51, 51, 51);
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+img{
+    display: block;
+    max-width: 50%;
+    height: auto;
+}

@@ -1,0 +1,102 @@
+@media (max-width: 1024px){
+    .site-main {
+        margin: 0;
+    }
+    .entry-header{
+        border-radius:0;
+    }
+    .button-primary{
+        font-size: 18px;
+    }
+    .site-logo img{
+        width: 8rem;
+    }
+    .site-logo span{
+        font-size: 18px;
+    }
+    .site-logos{
+        padding: 0;
+        margin: 0 2rem;
+    }
+    .site-information-image{
+        margin: 1rem;
+        flex-basis: 47%;
+    }
+    .entry-title{
+        font-size: 2.3em;
+    }
+    .entry-description{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px){
+    .site-main {
+        margin: 0;
+    }
+    .entry-header{
+        border-radius:0;
+    }
+    .site-navigation{
+        display: none;
+    }
+    .site-logos-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .site-logo{
+        flex: 0 0 26%;
+    }
+    .site-logo:not(:last-child){
+        margin-right: 0;
+    }
+    .site-information{
+        display: block;
+        text-align: center;
+    }
+    .site-form{
+        margin-top: 0;
+    }
+    .entry-description{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .entry-title{
+        font-size: 2.5em;
+    }
+    .site-form label{
+        width: 100%; 
+    }
+    .site-form button{
+        display: inline-block;
+    }
+    .button-primary{
+        font-size: 16px;
+    }
+    .site-form form > p{
+        display: block;
+    }
+    .site-form input{
+        width: 350px;
+        margin-top: 0.5rem;;
+    }
+    .site-blog-container h2{
+        margin-bottom: 0;
+    }
+    .site-posts{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 8rem;
+    }
+    .site-post{
+        margin-top: 3rem;
+    }
+    .site-blog-container{
+        margin-top: 0;
+    }
+    .site-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}

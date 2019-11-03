@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background: grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, 
+main, 
+aside, 
+footer{
+    display: flex;
+    background: white;
+    margin: 2rem 4rem;
+    padding: 1rem 1rem 3rem 1.5rem;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em black;
+}
+
+header,footer{
+    flex-basis: 100%;
+}
+
+main,aside{
+    padding-bottom: 16rem;
+}
+
+main{
+    flex: 1 0 250px;
+    margin-right: 2.5rem;
+}
+
+aside{
+    flex: 1 0 150px;
+}

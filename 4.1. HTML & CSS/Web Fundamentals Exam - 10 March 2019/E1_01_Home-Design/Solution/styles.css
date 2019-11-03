@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Courgette';
+}
+
+body{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+li:nth-of-type(1),
+li:nth-of-type(2){
+    padding-right: 2rem;
+}
+
+img{
+    width: 400px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 48px;
+    margin-top: 2rem;
+}
+
+.border-p{
+    width: 350px;
+    border-top: 1px solid red;
+    padding-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+h3, i{
+    color: red;
+}
+
+h3{
+    font-size: 26px;
+    padding-left: 14rem;
+}
+
+.continue{
+    padding-top: 2rem;
+}
+
+h2{
+    padding-bottom: 1rem;
+}
+
+i{
+    padding-left: 1rem;
+}

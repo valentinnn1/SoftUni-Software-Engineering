@@ -1,0 +1,56 @@
+html{
+    max-width: 80%;
+    margin: 2rem 9rem;
+}
+
+body{
+    font: 16px/1.5 Helvetica, sans-serif;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.img img{
+    
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 5px;
+}
+
+header img{
+    float: right;
+    height: 12rem;
+    margin: 1em;
+}
+
+main img{
+    float: left;
+    margin-right: 1em;
+}
+
+h3{
+    margin-top: 3rem;
+}
+
+.next-to-blockquote{
+    display: inline-block;
+    width: 40%;
+}
+
+blockquote{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+blockquote{
+    border-left: 2px solid grey;
+    padding-left: 15px;
+}
+
+blockquote p{
+    font-style: italic;
+}
+
+blockquote p:nth-last-of-type(1){
+    text-align: right;
+}
+

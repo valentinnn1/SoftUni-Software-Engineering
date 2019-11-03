@@ -1,0 +1,26 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.3rem;
+}
+
+.letter {
+    background: black;
+    color: white;
+    padding: 1.3rem;
+    border-radius: 0.2em;
+
+}

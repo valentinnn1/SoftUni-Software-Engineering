@@ -1,0 +1,20 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+p{
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+.atag{
+    text-decoration: none;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange{
+    background-color: orange;
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+section{
+    border: 1px solid var(--font-color-yellow);
+    border-radius: 0.5em;
+    margin: 1rem auto;
+    width: 1000px;
+}
+
+ul{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    flex-basis: 28%;
+}
+
+h3, p{
+    color: var(--font-color-primary);
+}
+
+h3{
+    padding-bottom: 1rem;
+}
+
+input[type="submit"]{
+    color: var(--font-color-white);
+    background-color: var(--font-color-yellow);
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+input[type="submit"]:hover{
+    color: var(--font-color-yellow);
+    background-color: var(--font-color-primary);
+}

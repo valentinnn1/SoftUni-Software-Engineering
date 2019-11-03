@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font: 16px 'Open Sans';
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(240, 95, 64);
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2){
+    padding-right: 3rem;
+}
+
+section.first{
+    background: url(img/header.png) no-repeat center center;
+    background-size: cover;
+    height: 350px;
+}
+
+section.first h1,
+section.first p{
+    text-align: center;
+    color: white;
+}
+
+section.first h1{
+    padding-top: 5rem;
+}
+
+section.first p{
+    width: 700px;
+    margin: 0 auto;
+}
+
+section.first hr{
+    width: 50px;
+    margin: 20px auto;
+    background: rgb(240, 95, 64);
+    height: 3px;
+    border: none;
+}
+
+.second h1, 
+.second p{
+    text-align: center;
+    color: white;
+}
+
+section.second{
+    background: rgb(240, 95, 64);
+    height: 270px;
+    text-align: center;
+}
+
+section.second hr{
+    width: 50px;
+    margin: 20px auto;
+    background: white;
+    height: 3px;
+    border: none;
+}
+
+.second h1{
+    padding-top: 1rem;
+}
+
+section.second p{
+    width: 700px;
+    margin: 0 auto;
+}
+
+input[type="submit"]{
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 0.9em;
+    padding: 0.8rem 3rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+section.third{
+    height: 300px;
+    text-align: center;
+}
+
+section.third hr{
+    width: 50px;
+    margin: 20px auto;
+    background: rgb(240, 95, 64);
+    height: 3px;
+    border: none;
+}
+
+section.third h1{
+    padding-top: 1.5rem;
+}
+
+section.third ul,
+section.fourth ul{
+    display: flex;
+}
+
+section.third ul li{
+    list-style-type: none;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+section.third ul li:nth-last-of-type(1){
+    padding-left: 5rem;
+}
+
+section.third ul li:nth-last-of-type(4){
+    padding-left: 5rem;
+}
+
+.kind li h1{
+    padding-bottom: 0.3rem;
+}
+
+i{
+    font-size: 55px;
+    color: rgb(240, 95, 64);
+}
+
+section.fourth{
+    height: 250px;
+    text-align: center;
+    border-top: 3px solid rgb(240, 95, 64);
+    border-bottom: 3px solid rgb(240, 95, 64);
+}
+
+section.fourth ul li{
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 2.5rem;
+}
+
+section.fourth img{
+    width: 400px;
+    height: 244px;
+    border-left: 3px solid rgb(240, 95, 64);
+    border-right: 3px solid rgb(240, 95, 64);
+}
+
+span{
+    color: rgb(240, 95, 64);
+}
+
+footer{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.kind li p{
+    width: 250px;
+}

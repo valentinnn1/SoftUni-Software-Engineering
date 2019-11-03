@@ -1,0 +1,25 @@
+html{
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: Georgia, serif;
+    display: inline;
+}
+
+nav, li{
+    display: inline-block;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
